@@ -18,15 +18,19 @@ li {
     max-width: 100%;
 }
 
+body {
+    font-size: 18px;
+}
+
 .flex-container {
     align-items: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .header {
     height: 100px;
-    padding: 10px 0;
+    padding: 10px 20px;
 }
 
 .header__brand {
@@ -38,8 +42,74 @@ li {
 }
 
 .hero {
+    align-items: center;
     background-image: url(../assets/images/taxi.jpg);
     background-position: bottom;
     background-size: cover;
+    display: flex;
+    justify-content: flex-end;
     min-height: 500px;
+}
+
+.hero__registro {
+    background-color: #f4b617;
+    color: white;
+    height: 350px;
+    padding: 20px;
+    width: 40%;
+}
+
+.hero__title {
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.hero__subtitle {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.hero__sep::before {
+    content: '';
+    background-color: white;
+    height: 1px;
+    display: inline-block;
+    margin-right: 20px;
+    width: 50px;
+}
+
+.brand {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.hero__sep::after {
+    content: '';
+    background-color: white;
+    height: 1px;
+    display: inline-block;
+    margin-left: 20px;
+    width: 50px;
+}
+
+.hero__desktop {
+    display: none;
+}
+
+.button__gray {
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    padding: 10px 15px;
+    margin: 20px 0;
+}
+
+@media (min-width: 800px) {
+    .hero__desktop {
+        display: block;
+    }
+    .hero__mobile {
+        display: none;
+    }
 }
