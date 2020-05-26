@@ -9,12 +9,12 @@
 </head>
 
 <body>
-    <header class="flex-container header">
+    <header class="container__flex header">
         <div class="header__brand">
             <img src="./assets/images/logoForma.png" alt="">
         </div>
         <nav>
-            <ul class="flex-container">
+            <ul class="container__flex">
                 <li><a class="header__item" href="">Viaja</a></li>
                 <li><a class="header__item" href="">Conduce</a></li>
                 <li><a class="header__item" href="">Inicia Sesion</a></li>
@@ -22,119 +22,131 @@
         </nav>
     </header>
     <div class="hero">
-        <div class="hero__registro hero__mobile">
+        <div class="hero__registro background__yellow hero__mobile">
             <h2 class="hero__title">
                 Comienza a viajar <br> con <span class="brand">Lar&ltar</span>
             </h2>
             <button class="button__gray">Descarga el app</button>
         </div>
-        <div class="hero__registro hero__desktop">
+        <div class="hero__registro background__yellow hero__desktop">
             <h2 class="hero__title">Disfruta del viaje <br> Eres dueño de tu tiempo</h2>
-            <h3 class="hero__subtitle">Viaja con <span class="brand">Lar&ltar</span> </h3>
+            <h3 class="hero__subtitle">Viaja con <span class="brand">La&ltar</span> </h3>
             <button class="button__gray">REGISTRATE</button>
             <span class="hero__sep">O bien</span>
             <button class="button__gray">Conviertete en un conductor</button>
         </div>
     </div>
-    <div class="section">
-        <div>
-            <img src="./assets/images/iPhone6Plus.png" alt="">
-            <div>
-                <h2>Descarga la nueva app</h2>
-                <p>
+    <div class="section background__yellow">
+        <div class="section__mobile">
+            <h3>La nueva app</h3>
+            <div class="section__image__container">
+                <img class="img" src="./assets/images/iPhone6Plus.png" alt="">
+            </div>
+        </div>
+        <h3 class="section__mobile__publi">Llega a tu destino aun mas rapido</h3>
+        <div class="section__desktop">
+            <div class="section__image__container">
+                <img class="img" src="./assets/images/iPhone6Plus.png" alt="">
+            </div>
+            <div class="section__internal">
+                <h2 class="section__internal__margin">Descarga la nueva app</h2>
+                <p class="section__internal__margin">
                     La version actualizada de LabCar esta llena de nuevas funciones para llegar a donde quieras aun mas facil y rapido.
                 </p>
-                <p>
+                <p class="section__internal__margin">
                     Con solo tocar un boton, un auto llega justo a tu ubicacion. Subete y no te preocupes, tu conductor sabe exactamente a donde ir.
                 </p>
             </div>
         </div>
     </div>
-    <div class="section__background">
-        <div>
-            <h2>Conduce cuando quieras</h2>
-            <p>
+    <div class="section background__image">
+        <div class="section__content">
+            <p class="section__content__text">Conduce cuando quieras</p>
+            <p class="section__content__text">
                 LabCar es una opcion flexible para alcanzar tus metas financieras
             </p>
+            <button class="button__yellow">Conviertete en conductor</button>
         </div>
     </div>
-    <div class="section flex-container">
-        <div>
-            <h2>Tarifas</h2>
-            <p>Consulta las tarifas LabCar aqui</p>
-            <div>
-                <img src="./assets/images/shape.png" alt="">
-                <input type="text" placeholder="Ingrese su punto de partida">
+    <div class="section background__yellow">
+        <div class="section__flex">
+            <div class="section__half">
+                <h2 class="section__internal__margin">Tarifas</h2>
+                <p class="section__internal__margin">Consulta las tarifas LabCar aqui</p>
+                <div class="section__internal__margin">
+                    <img src="./assets/images/shape.png" alt="">
+                    <input class="section__input" type="text" placeholder="Ingrese su punto de partida">
+                </div>
+                <div class="section__internal__margin">
+                    <img src="./assets/images/shape2.png" alt="">
+                    <input class="section__input" type="text" placeholder="Ingrese su destino" name="" id="">
+                </div>
+                <button class="section__button__gray">Traza Ruta!</button>
             </div>
-            <div>
-                <img src="./assets/images/shape.png" alt="">
-                <input type="text" placeholder="Ingrese su destino" name="" id="">
+            <div class="section__half__image">
+                <img class="img" src="./assets/images/mapa.jpg" alt="">
             </div>
-            <button>Traza Ruta!</button>
-        </div>
-        <div>
-            <img src="./assets/images/" alt="">
         </div>
     </div>
-    <footer>
-        <h3>Lab&ltar</h3>
-        <div>
+    <footer class="footer">
+        <h3 class="footer__brand">Lab&ltar</h3>
+        <div class="footer__nav">
             <nav>
                 <ul>
-                    <li>
+                    <li class="footer__nav__item">
                         <a href="">Viaja</a>
                     </li>
-                    <li>
+                    <li class="footer__nav__item">
                         <a href="">Conduce</a>
                     </li>
-                    <li>
+                    <li class="footer__nav__item">
                         <a href="">Ciudades</a>
                     </li>
-                    <li>
+                    <li class="footer__nav__item">
                         <a href="">Entregas</a>
                     </li>
-                    <li>
+                    <li class="footer__nav__item">
                         <a href="">Como funciona?</a>
                     </li>
-                    <li>
+                    <li class="footer__nav__item">
                         <a href="">Paises</a>
                     </li>
-                    <li>
+                    <li class="footer__nav__item">
                         <a href="">Seguridad</a>
                     </li>
-                    <li>
+                    <li class="footer__nav__item">
                         <a href="">Oportunidades</a>
                     </li>
-                    <li>
+                    <li class="footer__nav__item">
                         <a href="">Nuestra historia</a>
                     </li>
-                    <li>
+                    <li class="footer__nav__item">
                         <a href="">API de LabCar</a>
                     </li>
-                    <li>
+                    <li class="footer__nav__item">
                         <a href="">Eventos</a>
                     </li>
-                    <li>
+                    <li class="footer__nav__item">
                         <a href="">Desarrolladores</a>
                     </li>
-                    <li>
+                    <li class="footer__nav__item">
                         <a href="">Servicios</a>
                     </li>
-                    <li>
+                    <li class="footer__nav__item">
                         <a href="">Laboratoria</a>
                     </li>
-                    <li>
+                    <li class="footer__nav__item">
                         <a href="">Coders</a>
                     </li>
                 </ul>
             </nav>
             <div>
-                <img class="img" src="./assets/images/appstore.png" alt="">
-                <img class="img" src="./assets/images/enBadgeWebGeneric.png" alt="">
+                <img class="img footer__store" src="./assets/images/appstore.png" alt="">
+                <img class="img footer__store" src="./assets/images/enBadgeWebGeneric.png" alt="">
             </div>
         </div>
-        <span>LabCar technologies Inc.</span>
-        <span><a href="https://github.com/oriananohemi">oriananohemi</a></span>
+        <span class="copy">LabCar technologies Inc.</span><br>
+        <span class="copy"><a href="https://github.com/oriananohemi">oriananohemi</a></span>
     </footer>
 </body>
 

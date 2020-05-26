@@ -1,115 +1,327 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-.img {
-    max-height: 100%;
-    max-width: 100%;
-}
-
-body {
-    font-size: 18px;
-}
-
-.flex-container {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-.header {
-    height: 100px;
-    padding: 10px 20px;
-}
-
-.header__brand {
-    width: 80px;
-}
-
-.header__item {
-    margin-left: 10px;
-}
-
-.hero {
-    align-items: center;
-    background-image: url(../assets/images/taxi.jpg);
-    background-position: bottom;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    min-height: 500px;
-}
-
-.hero__registro {
-    background-color: #f4b617;
-    color: white;
-    height: 350px;
-    padding: 20px;
-    width: 40%;
-}
-
-.hero__title {
-    font-size: 25px;
-    margin: 20px 0;
-}
-
-.hero__subtitle {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.hero__sep::before {
-    content: '';
-    background-color: white;
-    height: 1px;
-    display: inline-block;
-    margin-right: 20px;
-    width: 50px;
-}
-
-.brand {
-    font-size: 25px;
-    font-weight: 800;
-}
-
-.hero__sep::after {
-    content: '';
-    background-color: white;
-    height: 1px;
-    display: inline-block;
-    margin-left: 20px;
-    width: 50px;
-}
-
-.hero__desktop {
-    display: none;
-}
-
-.button__gray {
-    background-color: white;
-    border-radius: 5px;
-    border: none;
-    display: block;
-    padding: 10px 15px;
-    margin: 20px 0;
-}
-
-@media (min-width: 800px) {
-    .hero__desktop {
-        display: block;
-    }
-    .hero__mobile {
-        display: none;
-    }
-}
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+            
+            li {
+                list-style: none;
+            }
+            
+            .img {
+                max-height: 100%;
+                max-width: 100%;
+            }
+            
+            body {
+                font-size: 18px;
+            }
+            
+            .background__yellow {
+                background-color: #f4b617;
+                color: #fff;
+            }
+            
+            .container__flex {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .header {
+                height: 100px;
+                padding: 10px 20px;
+            }
+            
+            .header__brand {
+                width: 80px;
+            }
+            
+            .header__item {
+                margin-left: 10px;
+            }
+            
+            .hero {
+                align-items: center;
+                background-image: url(../assets/images/taxi.jpg);
+                background-position: bottom;
+                background-size: cover;
+                display: flex;
+                justify-content: flex-end;
+                min-height: 500px;
+            }
+            
+            .hero__registro {
+                height: 200px;
+                padding: 20px;
+                width: 80%;
+            }
+            
+            .hero__title {
+                font-size: 35px;
+                margin: 20px 0;
+            }
+            
+            .hero__subtitle {
+                font-size: 18px;
+                margin: 10px 0;
+            }
+            
+            .hero__desktop {
+                display: none;
+            }
+            
+            .button__gray {
+                background-color: white;
+                border-radius: 5px;
+                border: none;
+                display: block;
+                padding: 10px 15px;
+                margin: 20px 0;
+            }
+            
+            .section {
+                padding: 25px 15px;
+                text-align: center;
+            }
+            
+            .section__image__container {
+                margin: 0 auto;
+                width: 250px;
+            }
+            
+            .section__mobile {
+                border: 1px solid white;
+                padding: 20px
+            }
+            
+            .section__mobile__publi {
+                margin-top: 20px;
+                text-align: left;
+            }
+            
+            .section__desktop {
+                display: none;
+            }
+            
+            .background__image {
+                background: linear-gradient(rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .5) 100%), url(../assets/images/conduce.jpg);
+                background-position: center;
+                background-size: cover;
+                min-height: 400px;
+            }
+            
+            .section__content {
+                color: white;
+                text-align: left;
+                padding: 30px;
+            }
+            
+            .button__yellow {
+                background-color: #f4b617;
+                border: 1px solid #f4b617;
+                border-radius: 5px;
+                color: white;
+                padding: 10px 20px;
+                font-size: 20px;
+            }
+            
+            .section__content__text {
+                font-size: 20px;
+                margin: 20px 0;
+            }
+            
+            .section__half {
+                text-align: left;
+                margin: 20px auto;
+                width: 90%;
+            }
+            
+            .section__half__image {
+                border: 1px solid white;
+                padding: 10px;
+                margin: 0 auto;
+                width: 60%;
+            }
+            
+            .section__input {
+                background-color: transparent;
+                border: 1px solid white;
+                border-radius: 10px;
+                margin: 0 10px;
+                padding: 10px 20px;
+                width: 80%;
+            }
+            
+            .section__button__gray {
+                background-color: white;
+                border-radius: 5px;
+                border: none;
+                display: block;
+                padding: 10px 15px;
+                margin: 20px auto;
+                width: 20%;
+            }
+            
+            .footer {
+                background-color: #2b2b2b;
+                color: white;
+            }
+            
+            .footer__brand {
+                font-size: 30px;
+                padding: 15px 10px;
+            }
+            
+            .footer__store {
+                display: block;
+                margin: 10px;
+                width: 200px;
+            }
+            
+            .footer__nav {
+                align-items: center;
+                border-top: 1px solid white;
+                border-bottom: 1px solid white;
+                padding: 20px 10px;
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            .footer__nav__item {
+                margin: 5px 0;
+            }
+            
+            .copy {
+                font-size: 12px;
+                padding: 10px;
+            }
+            
+            @media (min-width: 700px) {
+                .hero__desktop {
+                    display: block;
+                }
+                .hero__mobile {
+                    display: none;
+                }
+                .hero {
+                    min-height: 600px;
+                }
+                .hero__registro {
+                    height: 350px;
+                    width: 45%;
+                }
+                .hero__title {
+                    font-size: 25px;
+                    margin: 20px 0;
+                }
+                .brand {
+                    font-size: 25px;
+                    font-weight: 800;
+                }
+                .hero__sep::before,
+                .hero__sep::after {
+                    content: '';
+                    background-color: white;
+                    height: 1px;
+                    display: inline-block;
+                    width: 100px;
+                }
+                .hero__sep::before {
+                    margin-right: 30px;
+                }
+                .hero__sep::after {
+                    margin-left: 30px;
+                }
+                .section {
+                    padding-left: 0;
+                }
+                .section__image__container {
+                    width: 300px;
+                }
+                .section__mobile__publi {
+                    display: none;
+                }
+                .section__desktop {
+                    align-items: center;
+                    display: flex;
+                    border: 1px solid white;
+                    justify-content: center;
+                    border-left: none;
+                    padding: 20px;
+                    width: 90%;
+                }
+                .section__internal {
+                    text-align: left;
+                    width: 60%;
+                }
+                .section__internal__margin {
+                    margin: 20px;
+                }
+                .section__mobile {
+                    display: none;
+                }
+                .background__image {
+                    background: url(../assets/images/conduce.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                .section__content {
+                    background-color: rgba(0, 0, 0, .5);
+                    padding: 20px;
+                    width: 50%;
+                }
+                .section__content__text {
+                    margin: 10px 0;
+                }
+                .section__flex {
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                }
+                .section__content__text {
+                    font-size: 20px;
+                    margin: 20px 0;
+                }
+                .section__half {
+                    width: 50%;
+                }
+                .section__half__image {
+                    width: 40%;
+                }
+                .section__input {
+                    width: 70%;
+                }
+                .section__button__gray {
+                    width: 30%;
+                }
+            }
+            
+            @media (min-width:1020px) {
+                .hero__registro {
+                    width: 50%;
+                }
+                .hero__title {
+                    font-size: 30px;
+                }
+                .section__desktop {
+                    width: 75%;
+                }
+                .section__internal {
+                    width: 35%;
+                }
+                .section__content {
+                    width: 30%;
+                }
+                .section__flex {
+                    margin: 0 auto;
+                    width: 70%;
+                }
+            }
